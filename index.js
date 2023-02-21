@@ -15,7 +15,7 @@ dotenv.config();
 const jwtSecret = process.env.JWT_SECRET;
 const mongoUrl = process.env.MONGO_URL;
 const clientUrl = process.env.CLIENT_URL;
-const port = process.env.PORT;
+const port = process.env.PORT || 6010 ;
 const bcryptSalt = bcrypt.genSaltSync(10);
 
 mongoose.set('strictQuery', false);
